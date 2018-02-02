@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>The Braswell Project</title>
+
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> </head>
+ </head>
+
+<body>
+
+
+  <!-- +++ NAVBAR +++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- +++ sideload not working 1/21 +++
+  <div id="navbar">
+  <script>
+    $("#navbar").load("navbar.html");
+  </script>
+  </div>
+   +++ end of disabled side load +++ -->
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+      <a class="navbar-brand" data-toggle="collapse" data-target="#home" data-parent="#DISPLAY_DATA"><img src="home.png" alt="Logo" style="width:40px;"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" data-target="#observation" data-parent="#DISPLAY_DATA" onclick="void(0)">Observation Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" data-target="#neuro_checks" data-parent="#DISPLAY_DATA" onclick="void(0)">Q4 HR Neuro Checks</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" data-target="#full_admit" data-parent="#DISPLAY_DATA" onclick="void(0)">Full Admission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" data-target="#diagnosis" data-parent="#DISPLAY_DATA" onclick="void(0)">Principal Diagnosis</a>
+          </li>
+        </ul>
+      </div>
+
+  </nav>
+  <br>
+
+
+
+  <!-- +++ DISPLAY DATA +++++++++++++++++++++++++++++++++++++++++ -->
+<div id="DISPLAY_DATA">
+    <div id="home" class="collapse toggle show" data-parent="#DISPLAY_DATA">
+
+      The Braswell Project is a set of quick guides for Observation vs. Regular
+      Observation.  Additionally contains cheat sheets on Diagnosis.</p>
+    </div>
+
+    <div id="observation" class="collapse toggle" data-parent="#DISPLAY_DATA">
+      <!-- calling load is not working, leaves pane completely empty -->
+      <!--
+      <script>
+        $("#observation").load("observe_admit.html");
+      </script>
+      +++ end disabled script -->
+      <!-- OBSERVATION ADMISSION GUIDELINES -->
+      <!-- version 0.1, no auto compiled -->
+
+      <!-- OBSERVATION ADMISSION GUIDELINES -->
+      <!-- version 0.3, no auto compiled -->
+      <!-- striped table-->
+      <!-- Q4 Neuro checks split into own section -->
+    <h4>Observation Admission Guide</h4>
+
+      <table class="table table-striped">
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ABDOMINAL PAIN W/O SPECIFIC DX</th>
+          </tr>
+          <tr>
+            <th>
+              ACUTE RENAL FAILURE/AKI IF
+                <ul>
+                    <li>EGFR   DECREASED &gt; 25% FROM BASELINE OR</li>
+                    <li>CREATININE 1.5-1.9X BASELINE</li>
+                </ul>
+            </th>
+          </tr>
+          <tr>
+            <th>ACUTE ETOH INTOXICATION/ACUTE ETOH WITHDRAWAL NO SYMPTOMS</th>
+          </tr>
+          <tr>
+            <th>INFECTION NOT TREATING WITH ANTIBIOTICS (INCLUDING FLU)</th>
+          </tr>
+          <tr>
+            <th>POST PROCEDURE W/O COMPLICATIONS</th>
+          </tr>
+          <tr>
+            <th>RESPIRATORY: O2 SATS 90% OR MORE</th>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div id="neuro_checks" class="collapse toggle" data-parent="#DISPLAY_DATA">
+      <!-- version 0.3, no auto compiled -->
+      <!-- striped table-->
+      <!-- Q4 Neuro checks split into own section -->
+
+      <h4>ALWAYS ORDER Q4 HR NEURO CHECKS FOR:</h4>
+
+      <table class="table table-striped">
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ACUTE ETOH INTOXICATION/ACUTE ETOH WITHDRAWAL NO SYMPTOMS</th>
+          </tr>
+          <tr>
+            <th>ALTERED MENTAL STATUS</th>
+          </tr>
+          <tr>
+            <th>ANY NEURO DX-POSSIBLE TIA/CVA, SEIZURE, ETC.</th>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div id="full_admit" class="collapse toggle" data-parent="#DISPLAY_DATA">
+
+      <!-- calling load is not working, leaves pane completely empty -->
+      <!--
+      <script>
+        $("#full_admit").load("full_admit.html");
+      </script>
+      +++ end disabled script -->
+
+      <!-- FULL ADMISSION GUIDELINES -->
+      <!-- version 0.1, no auto compiled -->
+      <h4>Full Admission Guide</h4>
+
+      <table class="table table-striped">
+        <thead>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ACUTE ETOH WITHDRAWAL (DOCUMENTED SYMPTOMS) CIWA 15-24 STEPDOWN, CIWA 25+ OR ACTIVE DT’S TO ICU</th>
+          </tr>
+        <tr><th>ACUTE PANCREATITIS (MUST MEET 2 OF 3 CRITERIA FOR DX)
+          <ul>
+            <li>HISTORY/PRESENTATION C/W DX</li>
+            <li>EITHER AMYLASE OR LIPASE 3X UPPER LIMIT OF NORMAL</li>
+            <li>RADIOGRAPHIC EVIDENCE ON CT ABD</li>
+          </ul>
+       </th></tr>
+       <tr><th>ACUTE RENAL FAILURE/AKI (MUST MEET 1 OF 2 CRITERIA FOR DX)
+         <ul>
+           <li>EGFR DECREASED BY 50% BASELINE</li>
+           <li>CREATININE ≥2X BASELINE</li>
+         </ul>
+      </th></tr>
+
+      <tr>
+        <th>BRADYCARDIA (SYMPTOMATIC)-ADMIT TO STEPDOWN OR CRITICAL CARE</th>
+      </tr>
+
+      <tr>
+        <th>CHF EXACERBATION- ALWAYS FULL ADMIT, UNLESS SPECIFICALLY TOLD BY UM TO ADMIT OBS</th>
+      </tr>
+
+      <tr>
+        <th>GENERAL INFECTION IF TREATING WITH ANTIBIOTICS</th>
+      </tr>
+
+      <tr>
+        <th>NSTEMI/STEMI- ADMIT TO STEPDOWN OR CCU</th>
+      </tr>
+      <tr>
+        <th>OSTEOMYELITIS</th>
+      </tr>
+
+      <tr>
+        <th>PNEUMONIA TREATING WITH ANTIBIOTICS</th>
+      </tr>
+
+      <tr>
+        <th>PULMONARY EMBOLISM (CONFIRMED NOT SUSPECTED)</th>
+      </tr>
+
+      <tr>
+        <th>RESPIRATORY WITH ANY OF THE FOLLOWING-SEE OBSERVATION GUIDE FOR GUIDELINES FLOOR, STEPDOWN OR ICU
+        <ul>
+          <li>O2 SATS 89% OR LESS and LESS THAN BASELINE</li>
+          <li>PaO2 30 SECONDS ADMIT TO CCU</li>
+          <li>PaO2 &lt;56 mmHg</li>
+          <li>PCO2 45-54</li>
+          <li>INCREASED WOB WITH USE OF ACCESSORY MUSCLES</li>
+        </ul>
+      </th></tr>
+
+
+      <tr>
+        <th>SEPSIS</th>
+      </tr>
+
+      <tr>
+        <th>STEMI/NTEMI-ADMIT TO STEPDOWN OR CCU</th>
+      </tr>
+
+      <tr>
+        <th>SVT/NSVT-IF STABLE ADMIT TO STEPDOWN, SUSTAINED V-TACH >30 SECONDS ADMIT TO CCU</th>
+      </tr>
+
+     </tbody>
+   </table>
+
+
+
+    </div>
+
+    <div id="diagnosis" class="collapse toggle" data-parent="#DISPLAY_DATA">
+
+      Principle Diagnosis coming soon...
+    </div>
+
+
+
+
+</div>
+
+</div>
+
+</body>
+
+
+
+</html>
